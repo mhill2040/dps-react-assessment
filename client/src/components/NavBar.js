@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
-import NewBeers from './NewBeers';
 
 class NavBar extends Component {
   activeItem = (navPath) => {
@@ -13,14 +12,12 @@ class NavBar extends Component {
     return (
       <div>
         <Menu pointing>
-          <Link to='/'>
-            <Menu.Item name='home' active={this.activeItem('/')} />
+          <Link to='/beers'>
+            <Menu.Item name='beers' active={this.activeItem('/beers')} />
           </Link>
-
-          <Link to='/newbeers'>
-            <Menu.Item name='NewBeers' />
+          <Link to='/breweries'>
+            <Menu.Item name='breweries' active={this.activeItem('/breweries')} />
           </Link>
-
           <Menu.Menu position='right'>
             <Link to='/'>
               <Menu.Item name='DPS React Assessment' />
