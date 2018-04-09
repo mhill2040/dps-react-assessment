@@ -9,7 +9,7 @@ class NoMatch extends Component {
       <Segment basic style={styles.fullHeight}>
         <Segment basic textAlign='center'>
           <Image style={styles.centered} size='large' src={Beer1} alt='beer1' />
-          <Header as='h1' style={styles.header}>Uh-oh, you already drank your beer!</Header>
+          <Header as='h1' style={styles.header}>Uh-oh, beer gone!</Header>
         </Segment>
         <Header as='h1' textAlign='center' inverted>
           Page Not Found
